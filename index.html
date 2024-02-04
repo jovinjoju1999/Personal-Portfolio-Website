@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -44,7 +44,7 @@
 
     <!---Hero Section--->
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Hi, There!</h4>
             <h1>I'm <span>Jovin Joju</span></h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium iure officia dolorem? 
@@ -68,11 +68,11 @@
 
     <!---About Section--->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="./Assets/Images/JovinAbout.jpg">
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-up">
             <h2>I am a Software <span>Engineer</span> <br> & Web Developer
             </h2>
             <div class="exp-area">
@@ -113,11 +113,11 @@
 
     <!---Services Section--->
     <section class="services" id="services">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>My <span>Services</span></h2>
         </div>
 
-        <div class="services-content">
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="box">
                 <img src="./Assets/Icons/s-1.svg" alt="mobile app icon">
                 <h3>Mobile-Apps</h3>
@@ -154,11 +154,11 @@
 
     <!---Projects Section--->
 <section class="project" id="project">
-    <div class="center-text">
+    <div class="center-text" data-aos="fade-down">
         <h2>My <span>Projects</span></h2>
     </div>
 
-    <div class="project-content">
+    <div class="project-content" data-aos="zoom-in-up">
         <div class="row">
             <img src="/Assets/Images/port-1.jpg" alt="Project 1">
             <div class="main-row">
@@ -241,11 +241,11 @@
 
 <!---Contact Section-->
 <section class="contact" id="contact">
-    <div class="center-text">
+    <div class="center-text" data-aos="fade-down">
         <h2>Contact <span>Me</span></h2>
     </div>
 
-    <div class="contact-form">
+    <div class="contact-form" data-aos="zoom-in">
         <form action="">
             <input type="text" placeholder="Your name" required>
             <input type="email" placeholder="Email Address.." required>
@@ -267,6 +267,13 @@
 
     <!---js link--->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1400,
+      });
+    </script>
     
 </body>
 </html>
